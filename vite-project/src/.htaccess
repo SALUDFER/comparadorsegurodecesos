@@ -1,0 +1,174 @@
+# Deshabilitar detección automática de carpetas
+DirectorySlash Off
+
+Options -MultiViews 
+RewriteEngine On
+RewriteBase /
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Redirigir a URLS sin .php
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteCond %{REQUEST_URI} !^/articulos/ [NC]
+RewriteRule ^ /%1 [R=301,NE,L]
+
+# Internal rewrite to add .php extension back if the file exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+# Reglas para mostrar el contenido del archivo .php cuando existe carpeta con mismo nombre
+RewriteRule ^seguro-decesos/adeslas-decesos(/)?$ /seguro-decesos/adeslas-decesos.php [L]
+RewriteRule ^seguro-decesos/caser-decesos(/)?$ /seguro-decesos/caser-decesos.php [L]
+RewriteRule ^seguro-decesos/generali-decesos(/)?$ /seguro-decesos/generali-decesos.php [L]
+RewriteRule ^seguro-decesos/helvetia-decesos(/)?$ /seguro-decesos/helvetia-decesos.php [L]
+RewriteRule ^seguro-decesos/mapfre-decesos(/)?$ /seguro-decesos/mapfre-decesos.php [L]
+RewriteRule ^seguro-decesos/ocaso-decesos(/)?$ /seguro-decesos/ocaso-decesos.php [L]
+RewriteRule ^seguro-decesos/santa-lucia-decesos(/)?$ /seguro-decesos/santa-lucia-decesos.php [L]
+
+
+RedirectMatch 301 /articulos$ /articulos/
+RedirectMatch 301 /Landing/adeslas$ /Landing/adeslas/
+RedirectMatch 301 /Landing/asisa$ /Landing/asisa/
+RedirectMatch 301 /Landing/caser$ /Landing/caser/
+RedirectMatch 301 /Landing/divina-pastora$ /Landing/divina-pastora/
+RedirectMatch 301 /Landing/dkv$ /Landing/dkv/
+RedirectMatch 301 /Landing/fe-seguros$ /Landing/fe-seguros/
+RedirectMatch 301 /Landing/fiatc$ /Landing/fiatc/
+RedirectMatch 301 /Landing/generali$ /Landing/generali/
+RedirectMatch 301 /Landing/helvetia$ /Landing/helvetia/
+RedirectMatch 301 /Landing/mayores$ /Landing/mayores/
+RedirectMatch 301 /Landing/repatriacion$ /Landing/repatriacion/
+RedirectMatch 301 /Landing/seguro-decesos$ /Landing/seguro-decesos/
+RedirectMatch 301 /barato$ /barato/
+RedirectMatch 301 /decesos$ /decesos/
+RedirectMatch 301 /landing$ /landing/
+RedirectMatch 301 /mayores$ /mayores/
+RedirectMatch 301 /mejor$ /mejor/
+RedirectMatch 301 /repatriacion$ /repatriacion/
+RedirectMatch 301 /precio$ /precio/
+RedirectMatch 301 /llamada-gratuita$ https://www.comparadorsegurodecesos.es/contacto
+RedirectMatch 301 /seguro-decesos/asociacion-europea-decesos$ https://www.comparadorsegurodecesos.es/seguro-decesos/europea-decesos
+RedirectMatch 301 /articulos/172-productos-de-seguros-de-decesos https://www.comparadorsegurodecesos.es/articulos/companias-de-seguros-de-decesos
+RedirectMatch 301 /articulos/seguros-de-decesos-para-inmigrantes https://www.comparadorsegurodecesos.es/articulos/seguro-decesos-repatriacion-extranjeros
+RedirectMatch 301 /articulos/75-los-seguros-de-decesos-en-los-viajes https://www.comparadorsegurodecesos.es/articulos/asistencia-viaje-seguro-decesos
+RedirectMatch 301 /aseguradora/mapfre https://www.comparadorsegurodecesos.es/seguro-decesos/mapfre-decesos
+RedirectMatch 301 /aseguradora/generali https://www.comparadorsegurodecesos.es/seguro-decesos/generali-decesos
+RedirectMatch 301 /coberturas-seguro-decesos/nortehispana https://www.comparadorsegurodecesos.es/seguro-decesos/nortehispana-decesos
+RedirectMatch 301 /coberturas-seguro-decesos/asociacion-europea https://www.comparadorsegurodecesos.es/seguro-decesos/asociacion-europea-decesos
+RedirectMatch 301 /coberturas-seguro-decesos/la-fe https://www.comparadorsegurodecesos.es/seguro-decesos/la-fe-decesos
+RedirectMatch 301 /aseguradora/asociacion-europea https://www.comparadorsegurodecesos.es/seguro-decesos/europea-decesos
+RedirectMatch 301 /coberturas-seguro-decesos/generali https://www.comparadorsegurodecesos.es/seguro-decesos/generali-decesos
+RedirectMatch 301 /aseguradora/nortehispana https://www.comparadorsegurodecesos.es/seguro-decesos/nortehispana-decesos
+RedirectMatch 301 /aseguradora/asisa https://www.comparadorsegurodecesos.es/seguro-decesos/asisa-decesos
+RedirectMatch 301 /articulos/ofertas-seguros-de-decesos-en-barcelona https://www.comparadorsegurodecesos.es/articulos/seguros-decesos-barcelona
+RedirectMatch 301 /articulos/67-companias-de-seguros-de-decesos https://www.comparadorsegurodecesos.es/articulos/companias-de-seguros-de-decesos
+RedirectMatch 301 /articulos/6-aseguradoras-de-decesos-en-espana https://www.comparadorsegurodecesos.es/articulos/companias-de-seguros-de-decesos
+RedirectMatch 301 /articulos/productos-de-seguros-de-decesos https://www.comparadorsegurodecesos.es/articulos/companias-de-seguros-de-decesos
+RedirectMatch 301 /articulos/173-seguros-de-decesos-para-inmigrantes https://www.comparadorsegurodecesos.es/articulos/seguro-decesos-repatriacion-extranjeros
+RedirectMatch 301 /articulos/cuanto-bebe-seguro-decesos https://www.comparadorsegurodecesos.es/articulos/cuanto-cuesta-incluir-bebe-seguro-decesos
+RedirectMatch 301 /coberturas-seguro-decesos/caser https://www.comparadorsegurodecesos.es/seguro-decesos/caser-decesos
+RedirectMatch 301 /articulos/105-ofertas-seguros-de-decesos-en-barcelona https://www.comparadorsegurodecesos.es/articulos/seguros-decesos-barcelona
+RedirectMatch 301 /articulos/156-seguros-de-decesos-baratos-en-madrid https://www.comparadorsegurodecesos.es/articulos/seguros-de-decesos-en-madrid
+RedirectMatch 301 /articulos/68-mejor-seguro-de-decesos https://www.comparadorsegurodecesos.es/articulos/cual-es-el-mejor-seguro-de-decesos
+RedirectMatch 301 /articulos/seguros-de-decesos-baratos-en-madrid https://www.comparadorsegurodecesos.es/articulos/seguros-de-decesos-en-madrid
+RedirectMatch 301 /articulos/como-contratar-un-seguro-de-decesos https://www.polizamedica.es/seguros/decesos/como-contratar-un-seguro-de-decesos
+RedirectMatch 301 /articulos/seguros-de-decesos-para-jubilados https://www.comparadorsegurodecesos.es/articulos/seguros-decesos-mayores
+RedirectMatch 301 /articulos/cuanto-cuesta-incorporar-al-bebe-en-el-seguro-de-decesos https://www.comparadorsegurodecesos.es/articulos/cuanto-cuesta-incluir-bebe-seguro-decesos
+RedirectMatch 301 /coberturas-seguro-decesos/ocaso https://www.comparadorsegurodecesos.es/seguro-decesos/ocaso-decesos
+RedirectMatch 301 /aseguradora/ocaso https://www.comparadorsegurodecesos.es/seguro-decesos/ocaso-decesos
+RedirectMatch 301 /articulos/102-mejor-seguro-de-entierro https://www.comparadorsegurodecesos.es/articulos/cual-es-el-mejor-seguro-de-decesos
+RedirectMatch 301 /articulos/los-mejores-seguros-de-decesos https://www.comparadorsegurodecesos.es/articulos/cual-es-el-mejor-seguro-de-decesos
+RedirectMatch 301 /articulos/13-compania-de-seguros-mas-barata-de-decesos https://www.comparadorsegurodecesos.es/articulos/companias-de-seguros-de-decesos
+RedirectMatch 301 /coberturas-seguro-decesos/sanitas https://www.comparadorsegurodecesos.es/seguro-decesos/sanitas-decesos
+RedirectMatch 301 /coberturas-seguro-decesos/asefa https://www.comparadorsegurodecesos.es/
+RedirectMatch 301 /articulos/66-la-asistencia-en-viaje-y-los-seguros-de-decesos https://www.comparadorsegurodecesos.es/articulos/asistencia-viaje-seguro-decesos
+RedirectMatch 301 /articulos/107-precio-de-seguro-decesos-internacional https://www.comparadorsegurodecesos.es/articulos/seguro-decesos-repatriacion-extranjeros
+RedirectMatch 301 /aseguradora/santalucia https://www.comparadorsegurodecesos.es/seguro-decesos/santa-lucia-decesos
+RedirectMatch 301 /articulos/63-estudio-mejor-seguro-de-decesos https://www.comparadorsegurodecesos.es/articulos/cual-es-el-mejor-seguro-de-decesos
+RedirectMatch 301 /articulos/116-que-seguro-de-decesos-es-mejor https://www.comparadorsegurodecesos.es/articulos/cual-es-el-mejor-seguro-de-decesos
+RedirectMatch 301 /articulos/127-seguros-de-decesos-baratos-barcelona https://www.comparadorsegurodecesos.es/articulos/seguros-decesos-barcelona
+RedirectMatch 301 /coberturas-seguro-decesos/fiatc https://www.comparadorsegurodecesos.es/seguro-decesos/fiatc-decesos
+RedirectMatch 301 /articulos/17-comparador-de-seguros-de-decesos https://www.comparadorsegurodecesos.es/
+RedirectMatch 301 /tabla-adeslas https://www.comparadorsegurodecesos.es/seguro-decesos/adeslas-decesos
+RedirectMatch 301 /articulos/109-los-mejores-seguros-de-decesos https://www.comparadorsegurodecesos.es/articulos/cual-es-el-mejor-seguro-de-decesos
+RedirectMatch 301 /coberturas-seguro-decesos/mapfre https://www.comparadorsegurodecesos.es/seguro-decesos/mapfre-decesos
+RedirectMatch 301 /articulos/140-seguros-de-decesos-para-jubilados https://www.comparadorsegurodecesos.es/articulos/seguros-decesos-mayores
+RedirectMatch 301 /aseguradora/dkv https://www.comparadorsegurodecesos.es/seguro-decesos/dkv-decesos
+RedirectMatch 301 /articulos/104-en-busca-de-una-asistencia-funeraria-de-calidad https://www.comparadorsegurodecesos.es/articulos/en-busca-de-una-asistencia-funeraria-de-calidad
+RedirectMatch 301 /articulos/62-las-diez-principales-companias-de-decesos https://www.comparadorsegurodecesos.es/articulos/companias-de-seguros-de-decesos
+RedirectMatch 301 /aseguradora/fiatc https://www.comparadorsegurodecesos.es/seguro-decesos/fiatc-decesos
+RedirectMatch 301 /coberturas-seguro-decesos/adeslas https://www.comparadorsegurodecesos.es/seguro-decesos/adeslas-decesos
+RedirectMatch 301 /aseguradora/adeslas https://www.comparadorsegurodecesos.es/seguro-decesos/adeslas-decesos
+RedirectMatch 301 /coberturas-seguro-decesos/dkv https://www.comparadorsegurodecesos.es/seguro-decesos/dkv-decesos
+RedirectMatch 301 /articulos/111-la-mejor-aseguradora-de-decesos https://www.comparadorsegurodecesos.es/articulos/cual-es-el-mejor-seguro-de-decesos
+RedirectMatch 301 /aseguradora/la-fe https://www.comparadorsegurodecesos.es/seguro-decesos/la-fe-decesos
+RedirectMatch 301 /articulos/seguro-de-decesos-barato-en-espana https://www.comparadorsegurodecesos.es/articulos/seguro-de-decesos-barato
+RedirectMatch 301 /articulos/134-seguros-de-decesos-para-ancianos https://www.comparadorsegurodecesos.es/articulos/seguros-decesos-mayores
+RedirectMatch 301 /articulos/85-las-mejores-funerarias-con-un-seguro-de-decesos https://www.comparadorsegurodecesos.es/articulos/cual-es-el-mejor-seguro-de-decesos
+RedirectMatch 301 /comparativa$ https://www.comparadorsegurodecesos.es/comparador-seguro-decesos
+RedirectMatch 301 /solicite-presupuesto$ https://www.comparadorsegurodecesos.es/contacto
+RedirectMatch 301 /coberturas-seguro-decesos/santalucia https://www.comparadorsegurodecesos.es/seguro-decesos/santa-lucia-decesos
+RedirectMatch 301 /comparar-seguro-decesos$ https://www.comparadorsegurodecesos.es/comparador-seguro-decesos
+RedirectMatch 301 /articulos/168-seguro-de-decesos-barato-en-espana https://www.comparadorsegurodecesos.es/articulos/seguro-de-decesos-barato
+
+# Set cache policies for CSS, JS, WOFF2, JPG, WebP, and SVG files
+<IfModule mod_headers.c>
+  # Cache CSS, JS, WOFF2, JPG, WebP, and SVG files for 1 year
+  <FilesMatch "\.(css|js|woff2|jpe?g|webp|svg)$">
+    Header set Cache-Control "public, max-age=31536000"
+  </FilesMatch>
+</IfModule>
+
+# Enable ETag headers for caching verification
+FileETag MTime Size
+
+# Enable Gzip compression for better performance
+<IfModule mod_deflate.c>
+  <FilesMatch "\.(js|css|html|xml|json|txt|svg|eot|woff|woff2|ttf)$">
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_brotli.c>
+  # Enable Brotli compression for specified file types
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript
+
+  # Set appropriate Brotli quality level (0 to 11)
+  BrotliCompressionQuality 11
+
+  # Add the 'br' extension to the file types that support Brotli
+  AddEncoding br .brotli
+</IfModule>
+
+ErrorDocument 404 /error-404.php
+
+# Directivas Seguridad Header
+Header always append X-Frame-Options SAMEORIGIN
+Header always append X-Content-Type-Options nosniff
+Header always set X-Permitted-Cross-Domain-Policies "none"
+Header set X-XSS-Protection "1; mode=block"
+
+
+# Add the HSTS header
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+# Add the Permissions-Policy header
+Header always set Permissions-Policy "geolocation=(), camera=(), microphone=(), accelerometer=(), gyroscope=(), magnetometer=(), payment=(), usb=(), fullscreen=(self)"
+
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Para ocultar la versión de PHP en las respuestas HTTP
+<IfModule mod_php5.c>
+    php_flag expose_php Off
+</IfModule>

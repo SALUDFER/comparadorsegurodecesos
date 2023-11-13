@@ -1,0 +1,1242 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Regular.eot');
+    src: url('../fonts/raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/raleway/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Regular.woff') format('woff'),
+        url('../fonts/raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {font-family: 'RalewayBold';
+    src: url('../fonts/raleway/Raleway-Bold.eot');
+    src: url('../fonts/raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/raleway/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/raleway/aleway-Bold.woff') format('woff'),
+        url('../fonts/raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+        url('../fonts/roboto/roboto-regular-webfont.woff') format('woff'),
+        url('../fonts/roboto/roboto-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+html, body {
+    font-family: 'Roboto', sans-serif !important;
+}
+button.btn{width:100%}
+button.btn.btn-danger{width:auto}
+p, ul, ol, td {
+    font-size: 17px;
+    line-height: 150%;
+    margin-bottom: 17px;
+}
+h1, h2, h3, h4, h5, h6{font-family: 'RalewayBold', sans-serif !important;}
+ul {
+    list-style-type: none;
+}
+.titulo {
+    padding: 0 200px;
+    text-align: left !important;
+}
+.display-4 {
+    font-size: 27px !important;
+}
+.azul_oscuro {
+    color: #033d5b;
+}
+.naranja {
+    color: #ff6905;
+}
+.verde {
+    color: #8bac0e;
+}
+h1, .ph1 {
+    font-size: 43px;
+}
+h2, .ph2 {
+    font-size:38px;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+img {max-width: 100%;}
+.btn-verde {
+    font-size: 18px;
+    padding: 20px;
+    background-color: #8bac0e !important;
+    border-color: #8bac0e !important;
+    white-space: nowrap;
+    line-height: 100%;
+    color:#ffffff;
+    border-radius: 50px;
+}
+.btn-verde:hover {
+    background-color: #ff6905 !important;
+    border-color: #ff6905 !important;
+}
+.btn-warning, .btn-danger:hover, button.btn-warning, button.btn-danger:hover{
+    color: #ffffff;
+    background-color: #8bac0e;
+    border-color: #69830a;
+    font-size: 15px;
+    padding: 10px 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show>.btn-warning.dropdown-toggle {
+    color: #ffffff !important;
+    background-color: #8363aa !important;
+    border-color: #4d3566 !important;
+}
+.btn-warning:hover, .btn-danger {
+    color: #fff;
+    background-color: #ff6905;
+    border-color: #d55500;
+}
+.btn-check:focus+.btn-warning, .btn-warning:focus {
+    color: #fff;
+    background-color: #ed1c24;
+    border-color: #ed1c24;
+    box-shadow: 0 0 0 0.25rem #8363aa;
+}
+.btn-danger {padding: 14px; font-size: 19px;}
+.nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(237 28 36) !important; font-weight: bold;}
+header nav {background: #ffffff;}
+header .nav-item {margin: 0 15px;}
+.navbar-collapse {flex-grow: 0 !important;}
+.contact {
+    background: #ebebeb;
+    color: #000000 !important;
+    padding: 11px 20px;
+    border-radius: 3px;
+    text-align: center;
+    border-color: #8363aa;
+    }
+.comparador {
+    background: #ffffff;
+    color: #8bac0e!important;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid #8bac0e;
+    width: 100%;
+    }
+.comparador:hover {background: #ff6905; color: #ffffff !important; border-color: #ffffff;}
+footer{
+    background: #003b5c;
+    padding: 14px 10px;
+    }
+footer a{font-size: 14px; color: #ffffff !important; margin: 6px;}
+section.parte_baja_inicio {
+    background-image: url(../../../../images/fondo_banner_ppal.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #eefafd;
+    padding: 100px 0px 0px;
+    background-position: 50% 50%;
+}
+
+.logo {width: 200px;}
+div#cta_blog {
+    margin: 40px auto 60px;
+    padding: 30px;
+    background: #033d5b;
+    box-shadow: 0px 5px 10px #3e3e3e;
+    -moz-box-shadow: 0px 5px 10px #3e3e3e;
+    -webkit-box-shadow: 0px 5px 10px #3e3e3e;
+}
+div#cta_blog p {
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 100%;
+    color: #fff;
+}
+div#cta_blog .row {
+    align-items: center
+}
+div#cta_blog img {
+    width: 165px !important;
+    position: absolute;
+    left: 70%;
+    top: 56px
+}
+.mascotas img {width: 100%;}
+
+header.fixed-top{z-index: 99 !important}
+
+/******************************************************************************** Para moviles ***********************************************************/
+@media only screen and (max-width: 575px) {
+.container {width: 91%;}
+.titulo {font-size: 22px; padding: 0 15px;}
+.llamada-gratis-fixed.llamada_visible{top:45%}
+.llamada-gratis-fixed i {font-size: 4em; padding: 0px }
+img.icono_movil {width: 45px;margin: 5px auto 25px;}
+.mascotas h3 {margin-top: 30px;}
+.contact {margin-top: 15px;}
+}
+
+/******************************************************************************** Para tablet ***********************************************************/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+.titulo {padding: 0 15px;}
+.mascotas h3 {margin-top: 30px;}
+.contact {margin-top: 15px;}
+
+
+}
+
+/******************************************************************************** Para tablet ***********************************************************/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+.titulo {padding: 0 15px;}
+.mascotas h3 {margin-top: 30px;}
+.mascotas img {width: 500px; margin: 0 auto;}
+.about img {display: none;}
+}
+
+/******************************************************************************** Para tablet ***********************************************************/
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+.titulo {padding: 0 15px;}
+
+}
+
+/**************************Banner action**************************************************/
+.banner-action {background: #003b5c;}
+.banner-action h3 {color: #ffffff; font-size: 33px; text-align:center}
+.banner-action .comparador {font-size: 22px; padding: 15px 20px;}
+.banner-action img {width: 100%;}
+.banner-action p {
+    font-size: 31px;
+    color: #ffffff;
+    text-align: center;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.banner-action h3 {font-size: 30px;}
+.banner-action .comparador {font-size: 17px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.banner-action h3 {padding: 19px;}
+}
+@media (max-width: 575px) {
+.banner-action h3 {font-size: 30px;}
+
+}
+
+/************************Lista moderna seguro decesos**********************/
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+.timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 24px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: '';
+    background-color: #8bac0e;
+}
+.timeline>li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px;
+}
+.timeline>li:after, .timeline>li:before {
+    display: table;
+    content: ' ';
+}
+.timeline>li:after {
+    clear: both;
+}
+.timeline>li .timeline-panel {
+    position: relative;
+    float: right;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+.timeline>li .timeline-image {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 3px solid #8bac0e;
+    border-radius: 100%;
+    background-color: #8bac0e;
+}
+.timeline>li .timeline-image h4 {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 12px;
+}
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+.timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+}
+.timeline .timeline-heading h3.subheading {
+    text-transform: uppercase;
+    font-size: 23px;
+}
+.timeline .timeline-body>ul, .timeline .timeline-body>p {
+    margin-bottom: 0;
+}
+.timeline>li .timeline-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeline>li .timeline-image i {
+    font-size: 30px
+}
+
+@media (max-width: 575px) {
+.timeline>li .timeline-panel {
+        padding: 0 0px 0 60px !important;
+    }
+    .timeline>li .timeline-image i {
+        font-size: 20px
+    }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+.timeline>li .timeline-panel {
+        padding: 0 20px 0 70px !important;
+    }
+    .timeline>li .timeline-image i {
+        font-size: 20px
+    }
+
+}
+
+@media (min-width: 767px) {
+    .timeline:before {
+        left: 49%;
+    }
+    .timeline>li {
+        min-height: 100px;
+        margin-bottom: 100px;
+    }
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 41%;
+        padding: 0 8px 20px 0px;
+        text-align: right;
+    }
+    .timeline>li .timeline-image {
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        margin-left: -50px;
+    }
+    .timeline>li .timeline-image h4 {
+        font-size: 13px;
+        line-height: 18px;
+        margin-top: 16px;
+    }
+    .timeline>li.timeline-inverted>.timeline-panel {
+        float: right;
+        padding: 0 8px 20px 0px;
+        text-align: left;
+    }
+}
+@media (min-width: 992px) {
+    .timeline>li {
+        min-height: 60px;
+    }
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px;
+    }
+    .timeline>li .timeline-image {
+        width: 80px;
+        height: 80px;
+        margin-left: -50px;
+    }
+    .timeline>li .timeline-image h4 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 30px;
+    }
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 20px 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .timeline>li {
+        height: 57px;
+    }
+    .timeline>li .timeline-panel {
+        padding: 0px 0px 0px 40px;
+    }
+    .timeline>li .timeline-image {
+        width: 65px;
+        height: 65px;
+        margin-left: -45px;
+    }
+    .timeline>li .timeline-image h4 {
+        margin-top: 40px;
+    }
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0px 40px 0px 0px;
+    }
+}
+/************************Lista moderna seguro decesos**********************/
+/*-----------------------------tipos seguros-----------------------------*/
+.productos {background: #f5f5f5; padding: 60px 0; }
+.tipos_landing_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 35px auto 20px;
+}
+.tipos_landing_flex>div {
+    width: 32%;
+    text-align: center !important;
+    padding: 15px;
+    margin: 8px 0px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px #c1c1c1;
+    -webkit-box-shadow: 0px 5px 10px #c1c1c1;
+    -moz-box-shadow: 0px 5px 10px #c1c1c1;
+}
+.tipos_landing_flex>div img {
+    margin: 0px auto 28px;
+    width: 100%;
+}
+.tipo_landing i{
+    font-size: 3rem;
+    color: #8bac0e;
+    padding: 20px
+    }
+.tipos_landing_flex>div h3 {
+    line-height: 100%;
+    font-size: 23px;
+    padding: 20px 10px;
+}
+.tipos_landing_flex>div h3 span {
+    line-height: 100%;
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 4px;
+}
+.tipos_landing_flex>div p {
+    text-align: center !important;
+    font-size: 17px;
+    height: 78px;
+    padding-top: 15px;
+}
+@media only screen and (max-width: 575px) {
+    .tipos_landing_flex>div {
+        width: 98%;
+    }
+    .tipos_landing_flex>div p {
+        height: auto;
+    }
+    .productos h2 {font-size: 30px;}
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .tipos_landing_flex>div {
+        width: 100%;
+    }
+    .tipos_landing_flex>div p {
+        height: auto;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .tipos_landing_flex>div {
+        width: 47%;
+    }
+    .tipos_landing_flex>div p {
+        height: auto;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .tipos_landing_flex>div p {
+        height: 80px;
+    }
+}
+
+
+/*****************************************BANNER ASEGURADORAS**********************************/
+.banner_aseguradoras {
+    background: url(/imagenes/seguro-decesos-barato.jpg) #00b0b5;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    height: auto;
+    background-position: 42% 50%;
+    position: relative;
+    margin-top: 85px;
+}
+.banner_principal_info {
+    width: 45%;
+    background: #ba141a;
+    padding: 10px 25px 20px;
+    margin: 54px 0px;
+}
+.banner_principal_info h1 {
+    color: #fff;
+    font-size: 36px;
+}
+.banner_principal_info h1 span {
+    font-size: 46px;
+}
+.banner_principal_lista ul {
+    margin-left: 1%;
+}
+.banner_aseguradoras button.btn {
+    margin-top: 20px;
+    background-color: #8bac0e;
+    border-color: #6e8614;
+    padding: 16px 0;
+    color: #fff !important;
+    width: 90%;
+    font-size: 25px;
+    letter-spacing: 1.3px;
+    border-radius: 50px;
+}
+.precio_decesos {
+    cursor: pointer;
+    position: absolute;
+    font-size: 19px;
+    padding: 20px;
+    bottom: 63px;
+    right: 64%;
+    color: #fff;
+    border-radius: 10px;
+    width: 280px;
+    line-height: 1;
+    border: 1px solid #fff;
+    background: rgb(139, 172, 15);
+    background: -moz-linear-gradient(90deg, rgba(139, 172, 15, 1) 0%, rgba(255, 84, 0, 0.47102591036414565) 48%, rgba(139, 172, 15, 1) 100%);
+    background: -webkit-linear-gradient(
+90deg
+, rgba(139, 172, 15, 1) 0%, rgba(255, 84, 0, 0.47102591036414565) 48%, rgba(139, 172, 15, 1) 100%);
+    background: linear-gradient(
+90deg
+, rgba(139, 172, 15, 1) 0%, rgba(255, 84, 0, 0.47102591036414565) 48%, rgba(139, 172, 15, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8bac0f", endColorstr="#8bac0f", GradientType=1);
+}
+.precio_decesos span {
+    font-size: 55px;
+    font-weight: bold;
+}
+.precio_decesos i {
+    font-size: 70px;
+}
+@media only screen and (max-width: 575px) {
+.banner_aseguradoras {
+    background-size: 660px !important;
+    background-position: 27% 0% !important;
+}
+.banner_aseguradoras section.container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.banner_aseguradoras button.btn { width: 94%; font-size: 20px;}
+.banner_principal_info {
+    width: 100%;
+    margin-top: 220px;
+    padding: 0px;
+}
+.precio_decesos {
+    width: 160px;
+    font-size: 10px;
+    bottom: 72%;
+    right: 4%;
+}
+.precio_decesos span {
+    font-size: 35px;
+}
+.precio_decesos i {
+    font-size: 35px;
+    padding-right: 4px;
+}
+.banner_principal_info h1 {
+    font-size: 7vw;
+}
+.banner_principal_info h1 span {
+    font-size: 8.5vw;
+}
+.banner_principal_lista ul {
+    font-size: 4vw
+}
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+.banner_aseguradoras {
+    background-size: contain !important;
+    background-position: 0% 0% !important;
+    margin-top: 87px;
+}
+.banner_aseguradoras section.container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.banner_principal_info {
+    width: 100%;
+    margin-top: 36%;
+    padding: 0px;
+}
+.banner_principal_lista ul {
+    font-size: 23px;
+}
+.precio_decesos {
+    width: 196px;
+    font-size: 13px;
+    bottom: 77%;
+    right: 10%;
+}
+.precio_decesos span {
+    font-size: 35px;
+}
+.precio_decesos i {
+    font-size: 35px;
+    padding-right: 4px;
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.banner_aseguradoras {
+    background-size: contain;
+    background-position: 0% 0%;
+}
+.banner_principal_info {
+    width: 100%;
+    margin-top: 35%;
+    padding: 0px;
+}
+.precio_decesos {
+    width: 196px;
+    font-size: 13px;
+    bottom: 580px;
+    right: 20%;
+}
+.banner_principal_info h1 {
+    font-size: 46px;
+}
+.precio_decesos i {
+    font-size: 55px;
+    padding-right: 4px;
+}
+.precio_decesos span {
+    font-size: 45px;
+}
+.banner_principal_lista {padding-left: 20%;}
+.banner_principal_lista div ul li {font-size: 23px;}
+.banner_aseguradoras button.btn {width: 60%;}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+   .banner_principal_info h1 span {
+    font-size: 38px;
+}
+
+}
+@media only screen and (min-width: 1200px) {
+  .banner_principal_info h1 span {
+    font-size: 45px;
+    }
+  .banner_principal_lista div ul li{font-size: 22px;}
+
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 600px;
+  padding: 100px 0px 200px;
+  margin-top: 88px;
+  position: relative;
+  background: url(/Landing/mayores/images/img-banner.jpg) #f7f5f3;
+  background-repeat: no-repeat;
+  background-position-x: 45%;
+/*background: rgb(135,218,220);
+background: linear-gradient(90deg, rgba(135,218,220,1) 7%, rgba(213,245,255,1) 42%, rgba(213,245,255,1) 62%, rgba(135,218,220,1) 94%, rgba(135,218,220,1) 94%);*/
+}
+#hero .wave {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: -160px;
+}
+#hero h1 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #003b5c;
+}
+#hero h2 {
+  margin: 10px 0 0 0;
+  font-size: 20px;
+  line-height: 1.4;
+}
+#hero h2 span {text-decoration: underline;}
+#hero .btn-get-started {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 15px 10px;
+  border-radius: 3px;
+  margin-top: 25px;
+  color: #fff;
+  background: #ff6905;
+  text-transform: uppercase;
+  border-color: #ff6905;
+  width: 290px;
+  text-align: center;
+  max-width: 100%;
+  border-bottom: 3px solid #ab4603;
+  border-right: 3px solid #ab4603;
+}
+#hero .btn-get-started:hover {
+  opacity: 0.8;
+}
+@media (max-width: 1199px) {
+   #hero {background-size: 1600px;}
+   #hero .wave {bottom: -94px;}
+}
+@media (max-width: 991px) {
+  #hero {
+	background-size: 1400px;
+  }
+  #hero h1 {
+       font-size: 34px;
+       line-height: 1.2;
+
+    }
+    #hero h2 {
+    	font-size: 17px;
+    }
+
+  #hero .hero-img img {
+    width: 50%;
+  }
+  #hero .wave {
+    bottom: -32px;}
+}
+@media (max-width: 767px) {
+    #hero {
+        background-size: 1200px;
+        height: auto;
+        padding: 40px 0px;
+        background-position: 22% -5%;
+    }
+    .sloganBanner {height: auto; margin: auto; margin-top: 65%;}
+  #hero h1 {
+    font-size: 28px;
+    line-height: 100%;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #hero .hero-img img {
+    width: 80%;
+  }
+}
+@media (max-width: 575px){
+    #hero {
+        background-size: 200%;
+        height: auto;
+        padding: 40px 0px;
+        background-position: 22% -5%;
+    }
+    #hero .wave {display: none; background-color: #ffffff !important;}
+    .sloganBanner {height: auto; margin: auto; margin-top: 60%;}
+
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .icon-boxes h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.about .icon-box {
+  margin-top: 28px;
+}
+.about .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: #8bac0e;
+  border-radius: 50px;
+}
+.about .icon-box .icon i {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.about .icon-box .title {
+  margin-left: 85px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.about .icon-box .title a {
+  color: #343a40;
+}
+.about .icon-box .title a:hover {
+  color: #49b5e7;
+}
+.about .icon-box .description {
+  margin-left: 85px;
+  line-height: 24px;
+  font-size: 14px;
+}
+.about .video-box {
+  background: url("../img/about.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+.about form button {border: none;}
+@media (min-width: 1200px) {
+  .about .video-box {
+    margin-left: 15px;
+    margin-right: -15px;
+  }
+}
+.about .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#49b5e7 50%, rgba(73, 181, 231, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+  overflow: hidden;
+}
+.about .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+}
+.about .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(73, 181, 231, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+.about .play-btn:hover::after {
+  border-left: 15px solid #49b5e7;
+  transform: scale(20);
+}
+.about .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
+@-webkit-keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 1199px) {
+    .about .icon-boxes h2 {font-size: 28px;}
+}
+@media only screen and (max-width: 575px) {
+    .about .icon-boxes h2 {font-size: 22px;}
+}
+
+
+/************  ESTILO LLAMADA LATERAL    *************************************************/
+button.llamada-gratis-fixed {border:none}
+	.llamada-gratis-fixed {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    background-color: #8363aa;
+    right: -200px;
+    bottom: 0%;
+    padding: 7px;
+    z-index: 999;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 50% 0% 0% 0%;
+}
+
+
+.llamada-gratis-fixed.llamada_visible {
+    right: 0% !important;
+    width: 200px;
+    height: auto;
+    border-radius: 0% !important;
+    overflow: visible;
+    background-color: #00b0b5;
+    top: 50%
+}
+.llamada-gratis-fixed.llamada_visible p{color:#fff !important}
+.llamada-gratis-fixed i {
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 80px;
+    padding: 0px 15px;
+}
+.llamada-gratis-fixed.llamada_visible .btn-cerrar::after {
+    content: "+";
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: #ffffff80;
+    transform: rotate(45deg);
+    font-size: 25px;
+    font-weight: bold;
+}
+.llamada-gratis-fixed a {
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.llamada-gratis-fixed p {
+    line-height: 100%;
+}
+div.modal.fade form#presupuesto{background-color: #fff !important;}
+i.fa-mobile-screen-button {
+    -webkit-animation: tiembla 2s infinite;
+    color: #fff !important;
+    font-size:57px;
+    margin-top:14px
+}
+@-webkit-keyframes tiembla {
+    0% {
+        -webkit-transform: rotate( 0deg);
+    }
+    70% {
+        -webkit-transform: rotate( 0deg);
+    }
+    73% {
+        -webkit-transform: rotate( 6deg) scale(1.1);
+    }
+    76% {
+        -webkit-transform: rotate( -6deg) scale(1.1);
+    }
+    79% {
+        -webkit-transform: rotate(6deg) scale(1.1);
+    }
+    82% {
+        -webkit-transform: rotate( -6deg) scale(1.1);
+    }
+    85% {
+        -webkit-transform: rotate( 6deg) scale(1.1);
+    }
+    88% {
+        -webkit-transform: rotate( -6deg) scale(1.1);
+    }
+    91% {
+        -webkit-transform: rotate( 6deg) scale(1.1);
+    }
+    94% {
+        -webkit-transform: rotate(-6deg) scale(1.1);
+    }
+    97% {
+        -webkit-transform: rotate( 6deg) scale(1.1);
+    }
+    100% {
+        -webkit-transform: rotate( -6deg) scale(1.1);
+    }
+}
+#form_llamada_fixed #idnombre, #form_llamada_fixed #idtel {
+    height: 40px;
+    border: 1px solid #033d5b;
+
+}
+#form_llamada_fixed #solicitante {
+    background: #fff
+}
+#form_llamada_fixed .legend {
+    background-color: #ebebeb !important;
+    color: #8bac0e!important;
+}
+#form_llamada_fixed #solicitante select {
+    height: 40px;
+    border: 1px solid #033d5b !important;
+
+}
+#form_llamada_fixed ul li {
+    text-align: left
+}
+#form_llamada_fixed a.llamada-modal {
+    font-size: 24px !important
+}
+#form_llamada_fixed .modal-footer {
+    justify-content: flex-start !important
+}
+div.modal#modal-llamada {
+    padding-top: 50px
+}
+div.modal#modal-llamada .modal-footer {
+    justify-content: flex-start
+}
+a.llamada-modal {
+    font-size: 27px;
+    color: #8bac0e!important;
+}
+#form_llamada_fixed form#presupuesto input.enviar{background-color:#8bac0e; border-bottom:none}
+
+
+
+/*--------------------------------------------------------------
+# Ventajas Comparador
+--------------------------------------------------------------*/
+.ventajasComparador {
+    position: relative;
+    z-index: 1;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+}
+.ventajasComparador .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 64px;
+    height: 64px;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+}
+.ventajasComparador p {
+    text-align: left;
+    width: calc(85% - 50px);
+    display: inline-block;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+    color: #ffffff;
+}
+.ventajasComparador .icon i {
+    font-size: 30px;
+    color: #8bac0e;
+}
+@media (max-width: 1199px) {
+    .ventajasComparador p {font-size: 14px;}
+}
+@media (max-width: 575px) {
+    .ventajasComparador {height: auto; margin-top: 0; background: #003b5c; padding-top: 30px;}
+    .ventajasComparador p {margin-bottom: 45px;}
+}
+
+@media (max-width: 767px) {
+    .ventajasComparador {height: auto; margin-top: 0; background: #003b5c; padding-top: 30px;}
+}
+
+/*=============================
+    Carrusel Aseguradoras
+===============================*/
+.carrusel-aseguradoras img {
+    width: 165px;
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px gainsboro;
+    -webkit-box-shadow: 0 5px 10px gainsboro;
+    -moz-box-shadow: 0 5px 10px gainsboro;
+    padding: 20px;}
+.carrusel-aseguradoras .carousel-indicators {top: 140px;}
+.carrusel-aseguradoras .carousel-indicators [data-bs-target] {background-color: #033d5b !important;}
+.carousel-control-prev-icon {background-image: none;}
+@media (max-width: 575px) {
+.carrusel-aseguradoras .carousel-indicators {top: 110%;}
+.carrusel-aseguradoras img {width: 113px; padding:10px}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+.carrusel-aseguradoras .carousel-indicators {top: 416px;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.carrusel-aseguradoras h2 {
+    padding: 10px 20px;
+}
+.carrusel-aseguradoras .carousel-indicators {top: 295px;}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carrusel-aseguradoras .carousel-indicators {top: 295px;}
+}
+
+
+.carrusel-aseguradoras button{border:none; background:none; padding:0px}
+
+/*********** CORTES GENERALES *********************************************/
+
+
+/********** MOVIL *********************************************/
+@media only screen and (max-width: 575px) {
+
+	ul.navbar-nav{margin-top:15px}
+	#hero{margin-top: 90px}
+	.logo{width:150px}
+	.llamada-gratis-fixed {width: 100px; height: 100px;}
+	footer > div{width:70%}
+	.about div {box-shadow: none !important;}
+	.coberturas h2 {font-size: 30px;}
+
+
+}
+
+/********** TABLET *********************************************/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	ul.navbar-nav{margin-top:15px}
+	.about .icon-boxes h2 {font-size: 35px;}
+
+
+	#hero .wave{display:none}
+	#hero .wave svg{margin-top:-100px}
+	position: absolute;
+    div.shadow{margin-top:30px}
+
+    .llamada-gratis-fixed {width: 100px; height: 100px;}
+    .about div {box-shadow: none !important;}
+
+
+
+
+
+}
+
+
+/********** LAPTOP *********************************************/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.ventajasComparador {bottom: 80px;}
+	.ventajasComparador > div > div{flex-wrap: wrap; justify-content: center;}
+	.ventajasComparador p{width:100%; text-align:center; padding-left:0px; padding-top:10px; font-size: 13px; line-height: 1.3;}
+	.about div {box-shadow: none !important;}
+	.sloganBanner {margin-top: -70px;}
+
+
+
+}
+
+/********** ORDENADOR *********************************************/
+@media only screen and (min-width: 992px) {
+
+	i.fa-mobile-screen-button {font-size: 68px;}
+	.extraPadding {padding: 0 260px;}
+
+}
+

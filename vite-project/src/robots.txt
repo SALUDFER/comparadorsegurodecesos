@@ -1,0 +1,6 @@
+User-Agent: *
+
+Disallow: /feed/$
+Disallow: /*/*/feed$
+
+Sitemap: https://www.comparadorsegurodecesos.es/sitemap.xml
